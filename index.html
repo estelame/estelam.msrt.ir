@@ -1,0 +1,919 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استعلام مدرک تحصیلی</title>
+    <link rel="icon" href="../../images/icon.ico" type="image/ico" sizes="16x16">
+
+    <link rel="stylesheet" href="/Content/main.css">
+
+    
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/g9jXH0OtfQet-V0Aewq23c7K/recaptcha__fa.js" crossorigin="anonymous" integrity="sha384-tyohGl7vQWS1S0Eu35tz1XiwE60Q2geFDbqdEKliAjlHHRasJbbCFVlP61YRX5xX"></script><script src="/Scripts/main.js?ver=1.7"></script>
+    
+
+</head>
+
+
+<body style="min-height: 100vh;">
+        <header>
+            <div class="cover"></div>
+            <div class="div_logo">
+                
+                 <a class="logo"> </a>
+            </div>
+
+           
+            <div class="div_img">
+            
+            </div>
+        </header>
+    
+    <div class="fluid-container" style="min-height:593px">
+
+        
+
+
+
+<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&amp;render=explicit&amp;hl=fa" async="" defer=""></script>
+
+
+<div class="row">
+    <div class="col s12">
+        <div class="col-xs-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2 ">
+
+
+            <div class="col s12 m6 pull-l2 l4 counter" style="background-color:white;
+                                                 background-color:#0b4575;
+                                                 background:  url(../images/header-min.png);
+                                                 height:49px">
+                <div class="cover " style="height:49px"></div>
+                <h6 style="color:white;margin:0;text-align:center;padding:15px;z-index: 10;position: relative;font-size:13px">
+                    تعداد درخواست&zwnj;های تاییدیه تحصیلی
+                </h6>
+            </div>
+
+            <div class="col s12 m6 pull-l2 l4 counter" style="background-color:#0b4575;
+                                                        background:  url(../images/header-min.png);
+                                                       height:49px">
+                <div class="cover " style="height:49px"></div>
+                <h6 id="counterId" class="" style="color:white ;margin:0;text-align:center;padding:15px;z-index: 10;position: relative;">809905</h6>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col s12">
+        <div class="col-xs-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+            <ul class="tabs">
+                <li class="tab col s4 step1"><a class="active" href="#s1">ورود اطلاعات</a></li>
+                <li class="tab col s4 disabled step2"><a href="#s2">کد رهگیری</a></li>
+                <li class="tab col s4 disabled  step3"><a href="#s3">نمایش مدرک تحصیلی</a></li>
+            <li class="indicator" style="left: 341px; right: 0px;"></li></ul>
+        </div>
+    </div>
+    
+
+    <div id="s1" class="col s12 active">
+        <div class="col-xs-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+            <div class="box box-cme st1">
+
+                <form>
+
+                    <div class="alert alert-danger" style="direction:rtl;font-family:vazir;margin:20px 0">
+                        <strong>تذکر مهم :</strong>
+                        لطفا قبل از وارد کردن اطلاعات نکات مهم را در
+                        <a href="#modal2" class="  modal-trigger" style="text-align:center">
+                            این جا
+                        </a>
+                        مطالعه فرمایید .
+                    </div>
+
+
+
+
+                    <label class="lb_row ">                       
+                        <label class="lab_register name">
+                            <i class="fa fa-user iType"></i>
+                            <input id="name" class="" type="text" style="" value="" placeholder="نام">
+
+                            
+                            <i class="fa fa-asterisk iValidate name"></i>
+                            <i class="fa fa-check iValidate succsesM name"></i>
+                            <i class="fa fa-times iValidate warningM name"></i>
+                        </label>
+                    </label>
+
+                    <label class="lb_row ">
+                        <label class="lab_register family">
+                            <i class="fa fa-user-plus iType"></i>
+                            <input id="family" class="" type="text" style="" value="" placeholder="نام خانوادگی">
+
+                            
+                            <i class="fa fa-asterisk iValidate family"></i>
+                            <i class="fa fa-check iValidate succsesM family"></i>
+                            <i class="fa fa-times iValidate warningM family"></i>
+                        </label>
+                    </label>
+
+                    <label class="lb_row ">
+                        <label class="lab_register father">
+                            <i class="fa fa-male iType"></i>
+                            <input id="father" class="" type="text" style="" value="" placeholder="نام پدر">
+
+                            
+                            <i class="fa fa-asterisk iValidate father"></i>
+                            <i class="fa fa-check iValidate succsesM father"></i>
+                            <i class="fa fa-times iValidate warningM father"></i>
+                        </label>
+                    </label>
+
+                    <label class="lb_row ">
+                        <label class="lab_register mobile">
+                            <i class="fa fa-mobile iType"></i>
+                            <input id="mobile" class="onlynumeric" type="tel" style="" value="" placeholder="شماره موبایل">
+
+                            
+                            <i class="fa fa-asterisk iValidate mobile"></i>
+                            <i class="fa fa-check iValidate succsesM mobile"></i>
+                            <i class="fa fa-times iValidate warningM mobile"></i>
+                        </label>
+                    </label>
+
+
+                    <label class="lb_row ">
+                        <label class="lab_register nationalCode">
+                            <i class="fa fa-id-badge iType"></i>
+                            <input id="nationalCode" class="onlynumeric" type="tel" value="" style="" placeholder="کد ملی">
+
+
+                            
+                            <i class="fa fa-asterisk iValidate nationalCode"></i>
+                            <i class="fa fa-check iValidate succsesM nationalCode"></i>
+                            <i class="fa fa-times iValidate warningM nationalCode"></i>
+                        </label>
+                    </label>
+
+
+                    <label class="lb_row ">
+                        <label class="lab_register numberId">
+                            <i class="fa fa-id-card-o iType"></i>
+                            <input id="numberId" class="onlynumeric" type="tel" value="" style="" placeholder="شماره شناسنامه">
+
+
+                            <i class="fa fa-asterisk iValidate numberId"></i>
+                            <i class="fa fa-check iValidate succsesM numberId"></i>
+                            <i class="fa fa-times iValidate warningM numberId"></i>
+                        </label>
+                    </label>
+
+                    <label class="lb_row ">
+                        <label class="lab_register serialId">
+                            <i class="fa fa-ellipsis-h iType"></i>
+
+                            <input id="serialId" class="onlynumeric" type="tel" maxlength="6" style="" placeholder="فقط 6 رقم عددی سریال شناسنامه را وارد کنید">
+
+                            <a href="#modal1" class="btn-floating btn-small  red lighten-1 pulse modal-trigger" style="color:yellow;position:absolute;
+                                                              left:30px;top:4px; width:26px;height:26px; ">
+                                <i class="fa fa-info  " style="top:5px;color:#ffcdd2 "></i>
+                            </a>
+
+                            <i class="fa fa-asterisk iValidate serialId"></i>
+                            <i class="fa fa-check iValidate succsesM serialId"></i>
+                            <i class="fa fa-times iValidate warningM serialId"></i>
+                        </label>
+                    </label>
+
+                    <label class="lb_row ">
+                        <label class="lab_register birthday">
+                            <i class="fa fa-calendar iType"></i>
+
+
+                            <select id="day" class="form-control select2 select2-hidden-accessible" style="width: 20%;" tabindex="-1" aria-hidden="true" data-select2-id="day">
+                            
+            <option value="01"> 1 </option>
+           
+            <option value="02"> 2 </option>
+           
+            <option value="03"> 3 </option>
+           
+            <option value="04"> 4 </option>
+           
+            <option value="05"> 5 </option>
+           
+            <option value="06"> 6 </option>
+           
+            <option value="07"> 7 </option>
+           
+            <option value="08"> 8 </option>
+           
+            <option value="09"> 9 </option>
+           
+            <option value="10"> 10 </option>
+           
+            <option value="11"> 11 </option>
+           
+            <option value="12"> 12 </option>
+           
+            <option value="13"> 13 </option>
+           
+            <option value="14"> 14 </option>
+           
+            <option value="15"> 15 </option>
+           
+            <option value="16"> 16 </option>
+           
+            <option value="17"> 17 </option>
+           
+            <option value="18"> 18 </option>
+           
+            <option value="19"> 19 </option>
+           
+          <option value="20" selected="selected" data-select2-id="36"> 20 </option>
+         
+            <option value="21"> 21 </option>
+           
+            <option value="22"> 22 </option>
+           
+            <option value="23"> 23 </option>
+           
+            <option value="24"> 24 </option>
+           
+            <option value="25"> 25 </option>
+           
+            <option value="26"> 26 </option>
+           
+            <option value="27"> 27 </option>
+           
+            <option value="28"> 28 </option>
+           
+            <option value="29"> 29 </option>
+           
+            <option value="30"> 30 </option>
+           
+            <option value="31"> 31 </option>
+           </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="35" style="width: 20%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-day-container"><span class="select2-selection__rendered" id="select2-day-container" role="textbox" aria-readonly="true" title=" 20 "> 20 </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+
+                            /
+                            <select id="month" class="form-control select2 select2-hidden-accessible" style="width: 30%;" data-select2-id="month" tabindex="-1" aria-hidden="true">
+                                <option value="01" selected="selected" data-select2-id="39">فروردین</option>
+                                <option value="02">اردیبهشت</option>
+                                <option value="03">خرداد</option>
+                                <option value="04">تیر</option>
+                                <option value="05">مرداد</option>
+                                <option value="06">شهریور</option>
+                                <option value="07">مهر</option>
+                                <option value="08">آبان</option>
+                                <option value="09">آذر</option>
+                                <option value="10">دی</option>
+                                <option value="11">بهمن</option>
+                                <option value="12">اسفند</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="38" style="width: 30%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-month-container"><span class="select2-selection__rendered" id="select2-month-container" role="textbox" aria-readonly="true" title="فروردین">فروردین</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            /
+                            <select id="year" class="form-control select2 select2-hidden-accessible" style="width: 25%;" tabindex="-1" aria-hidden="true" data-select2-id="year">
+                            
+            <option value="1280"> 1280 </option>
+        
+            <option value="1281"> 1281 </option>
+        
+            <option value="1282"> 1282 </option>
+        
+            <option value="1283"> 1283 </option>
+        
+            <option value="1284"> 1284 </option>
+        
+            <option value="1285"> 1285 </option>
+        
+            <option value="1286"> 1286 </option>
+        
+            <option value="1287"> 1287 </option>
+        
+            <option value="1288"> 1288 </option>
+        
+            <option value="1289"> 1289 </option>
+        
+            <option value="1290"> 1290 </option>
+        
+            <option value="1291"> 1291 </option>
+        
+            <option value="1292"> 1292 </option>
+        
+            <option value="1293"> 1293 </option>
+        
+            <option value="1294"> 1294 </option>
+        
+            <option value="1295"> 1295 </option>
+        
+            <option value="1296"> 1296 </option>
+        
+            <option value="1297"> 1297 </option>
+        
+            <option value="1298"> 1298 </option>
+        
+            <option value="1299"> 1299 </option>
+        
+            <option value="1300"> 1300 </option>
+        
+            <option value="1301"> 1301 </option>
+        
+            <option value="1302"> 1302 </option>
+        
+            <option value="1303"> 1303 </option>
+        
+            <option value="1304"> 1304 </option>
+        
+            <option value="1305"> 1305 </option>
+        
+            <option value="1306"> 1306 </option>
+        
+            <option value="1307"> 1307 </option>
+        
+            <option value="1308"> 1308 </option>
+        
+            <option value="1309"> 1309 </option>
+        
+            <option value="1310"> 1310 </option>
+        
+            <option value="1311"> 1311 </option>
+        
+            <option value="1312"> 1312 </option>
+        
+            <option value="1313"> 1313 </option>
+        
+            <option value="1314"> 1314 </option>
+        
+            <option value="1315"> 1315 </option>
+        
+            <option value="1316"> 1316 </option>
+        
+            <option value="1317"> 1317 </option>
+        
+            <option value="1318"> 1318 </option>
+        
+            <option value="1319"> 1319 </option>
+        
+            <option value="1320"> 1320 </option>
+        
+            <option value="1321"> 1321 </option>
+        
+            <option value="1322"> 1322 </option>
+        
+            <option value="1323"> 1323 </option>
+        
+            <option value="1324"> 1324 </option>
+        
+            <option value="1325"> 1325 </option>
+        
+            <option value="1326"> 1326 </option>
+        
+            <option value="1327"> 1327 </option>
+        
+            <option value="1328"> 1328 </option>
+        
+            <option value="1329"> 1329 </option>
+        
+            <option value="1330"> 1330 </option>
+        
+            <option value="1331"> 1331 </option>
+        
+            <option value="1332"> 1332 </option>
+        
+            <option value="1333"> 1333 </option>
+        
+            <option value="1334"> 1334 </option>
+        
+            <option value="1335"> 1335 </option>
+        
+            <option value="1336"> 1336 </option>
+        
+            <option value="1337"> 1337 </option>
+        
+            <option value="1338"> 1338 </option>
+        
+            <option value="1339"> 1339 </option>
+        
+            <option value="1340"> 1340 </option>
+        
+            <option value="1341"> 1341 </option>
+        
+            <option value="1342"> 1342 </option>
+        
+            <option value="1343"> 1343 </option>
+        
+            <option value="1344"> 1344 </option>
+        
+            <option value="1345"> 1345 </option>
+        
+            <option value="1346"> 1346 </option>
+        
+            <option value="1347"> 1347 </option>
+        
+            <option value="1348"> 1348 </option>
+        
+            <option value="1349"> 1349 </option>
+        
+            <option value="1350"> 1350 </option>
+        
+            <option value="1351"> 1351 </option>
+        
+            <option value="1352"> 1352 </option>
+        
+            <option value="1353"> 1353 </option>
+        
+            <option value="1354"> 1354 </option>
+        
+            <option value="1355"> 1355 </option>
+        
+            <option value="1356"> 1356 </option>
+        
+            <option value="1357"> 1357 </option>
+        
+            <option value="1358"> 1358 </option>
+        
+            <option value="1359"> 1359 </option>
+        
+            <option value="1360"> 1360 </option>
+        
+            <option value="1361"> 1361 </option>
+        
+            <option value="1362"> 1362 </option>
+        
+            <option value="1363"> 1363 </option>
+        
+            <option value="1364"> 1364 </option>
+        
+            <option value="1365"> 1365 </option>
+        
+            <option value="1366"> 1366 </option>
+        
+            <option value="1367"> 1367 </option>
+        
+            <option value="1368"> 1368 </option>
+        
+            <option value="1369"> 1369 </option>
+        
+            <option value="1370" selected="selected" data-select2-id="160"> 1370 </option>
+        
+            <option value="1371"> 1371 </option>
+        
+            <option value="1372"> 1372 </option>
+        
+            <option value="1373"> 1373 </option>
+        
+            <option value="1374"> 1374 </option>
+        
+            <option value="1375"> 1375 </option>
+        
+            <option value="1376"> 1376 </option>
+        
+            <option value="1377"> 1377 </option>
+        
+            <option value="1378"> 1378 </option>
+        
+            <option value="1379"> 1379 </option>
+        
+            <option value="1380"> 1380 </option>
+        
+            <option value="1381"> 1381 </option>
+        
+            <option value="1382"> 1382 </option>
+        
+            <option value="1383"> 1383 </option>
+        
+            <option value="1384"> 1384 </option>
+        
+            <option value="1385"> 1385 </option>
+        
+            <option value="1386"> 1386 </option>
+        
+            <option value="1387"> 1387 </option>
+        
+            <option value="1388"> 1388 </option>
+        
+            <option value="1389"> 1389 </option>
+        
+            <option value="1390"> 1390 </option>
+        
+            <option value="1391"> 1391 </option>
+        
+            <option value="1392"> 1392 </option>
+        
+            <option value="1393"> 1393 </option>
+        
+            <option value="1394"> 1394 </option>
+        
+            <option value="1395"> 1395 </option>
+        
+            <option value="1396"> 1396 </option>
+        
+            <option value="1397"> 1397 </option>
+        
+            <option value="1398"> 1398 </option>
+        
+            <option value="1399"> 1399 </option>
+        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="159" style="width: 25%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-year-container"><span class="select2-selection__rendered" id="select2-year-container" role="textbox" aria-readonly="true" title=" 1370 "> 1370 </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+
+
+
+                            <i class="fa fa-asterisk iValidate birthday"></i>
+                            <i class="fa fa-check iValidate succsesM birthday"></i>
+                            <i class="fa fa-times iValidate warningM birthday"></i>
+                        </label>
+                    </label>
+
+                    
+                    <div class="form-group div_reCaptcha">
+                        <div class="col-md-offset-0 col-md-12">
+                            <div id="captchaS1" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdK6N0ZAAAAAIC5H6dPeXctNWs1DdMcb4CGzp1K&amp;co=aHR0cHM6Ly9lc3RlbGFtLm1zcnQuaXI6NDQz&amp;hl=fa&amp;v=g9jXH0OtfQet-V0Aewq23c7K&amp;size=normal&amp;cb=49qbfwn5cdku" width="304" height="78" role="presentation" name="a-tcf35m3hgbz2" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                        </div>
+                    </div>
+
+                    <label class="lb_row ">
+
+                    </label>
+
+                    <label class="lb_row ">
+                        <a class="waves-effect waves-light btn   box-cme sendCodeBtn" onclick="sendCode(1)">صدور کد رهگیری</a>
+                    </label>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <!-- modal 1 -->
+    <div id="modal1" class="modal" style="max-height:55%; max-width:614px;top:0;" tabindex="0">
+        <a href="#" class="modal-close btn-floating blue-grey lighten-5" style="position:absolute; left :25px; top:15px">
+            <i class="fa fa-times" style="color:#444 !important"></i>
+        </a>
+
+        <div class="alert alert-danger" style="font-size:13px;direction:rtl;font-family:vazir;margin:80px 20px 30px 20px">
+            <strong>تذکر مهم :</strong>
+            فقط 6 رقم عددی سریال شناسنامه را وارد کنید .بعنوان مثال 23د/592385 فقط 592385 درج بشود .
+        </div>
+
+        <img src="/images/Serial-Example.jpg" alt="Alternate Text" style="position:relative;left:50%;transform:translateX(-50%);
+                            box-shadow:0px 0px 5px; width:90%; max-width:339px;margin-bottom:40px;">
+    </div>
+
+    <!-- modal2 -->
+
+    <div id="modal2" class="modal" style="max-height:55%; max-width:614px;top:0;" tabindex="0">
+        <a href="#" class="modal-close btn-floating blue-grey lighten-5" style="position:absolute; left :25px; top:15px">
+            <i class="fa fa-times" style="color:#444 !important"></i>
+        </a>
+
+
+
+        <div class="alert alert-danger" style="font-size:13px;direction:rtl;font-family:vazir;margin:80px 20px 30px 20px">
+            لطفا موارد ذیل را به دقت مطالعه بفرمایید.
+        </div>
+
+        <ul style="font-size:13px;direction:rtl;font-family:vazir; padding:5px 30px; list-style-type: circle !important;">
+            <li style="margin:15px 5px;list-style-type: circle !important;">
+
+                احراز هویت بر اساس اطلاعات شناسنامه شما صحت سنجی می شود لطفا اطلاعات مطابق شناسنامه تکمیل گردد.
+            </li>
+
+            <li style="margin:15px 5px;list-style-type: circle !important;">
+                لطفا برای مشاهده سوابق تحصیلی مالکیت شماره موبایل وارد شده با کد ملی همخوانی داشته باشد .
+                در صورت عدم همخوانی صرفا کد ارسال می شود و مدرک قابل مشاهده نمی باشد
+            </li>
+
+            <li style="margin:15px 5px;list-style-type: circle !important;">
+                فقط 6 رقم عددی سریال شناسنامه را وارد کنید .بعنوان مثال 23د/592385 فقط 592385 درج بشود .
+            </li>
+        </ul>
+
+    </div>
+
+
+    
+    <div id="s2" class="col s12" style="display: none;">
+        <div class="col-xs-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+            <div class="box box-cme st2">
+
+
+                <form style="padding-top: 15px;">
+
+                    <p class="p_st2" style="margin-bottom: 10px !important;">
+                        <i class="fa fa-check" style="color:#555"></i>
+                        کد رهگیری برای شماره موبایل <span id="s_mobile"></span> ارسال گردید .
+                    </p>
+                    <p class="p_st2">
+                        <i class="fa fa-check" style="color:#555"></i>
+                        در صورت تمایل به نمایش اطلاعات تحصیلی ، کد رهگیری ارسالی را وارد نمایید
+                    </p>
+                    <label class="lb_row ">
+                        <label class="lab_register codeRahgiri">
+                            <i class="fa fa-refresh1 iType "></i>
+
+                            <input id="codeRahgiri" class="" type="text" style="" placeholder="کد رهگیری">
+
+                            
+                            <i class="fa fa-asterisk iValidate codeRahgiri "></i>
+                            <i class="fa fa-check iValidate codeRahgiri succsesM "></i>
+                            <i class="fa fa-times iValidate codeRahgiri warningM "></i>
+                        </label>
+                    </label>
+
+                    <div class="form-group div_reCaptcha">
+                        <div class="col-md-offset-0 col-md-12">
+                            
+                            <div id="captchaS2" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdK6N0ZAAAAAIC5H6dPeXctNWs1DdMcb4CGzp1K&amp;co=aHR0cHM6Ly9lc3RlbGFtLm1zcnQuaXI6NDQz&amp;hl=fa&amp;v=g9jXH0OtfQet-V0Aewq23c7K&amp;size=normal&amp;cb=y4kicj8vfwb6" width="304" height="78" role="presentation" name="a-1l37ccmzm000" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+
+
+                        </div>
+
+                    </div>
+
+                    <label class="lb_row ">
+
+                        
+
+
+                    </label>
+
+                    
+
+                    <label class="lb_row ">
+
+                        <a class="waves-effect waves-light btn   box-cme inqueryBtn" onclick="inquery()"> استعلام مدرک تحصیلی  </a>
+                    </label>
+
+                    <label class="lb_row ">
+
+                        <a id="timerCode" class="waves-effect waves-light btn  disabled " onclick="refreshCodeRahgiri()">
+                            60
+                        </a>
+
+
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div id="s3" class="col s12" style="display: none;">
+
+
+
+
+        <div id="inqueryDiv" class="col-xs-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+
+
+            <div class="box box-cme st3 ">
+
+
+                <div class="content" i="">
+
+
+                    <div class="row">
+                        <div class="col-xs-12 " style="text-align:justify;padding-top:25px;direction:rtl">
+                            <span class="second">
+
+
+                                در صورت مشاهده مغايرت در اطلاعات و يا عدم وجود اطلاعات مقاطع فارغ التحصيلي، اگر فارغ التحصیل دانشگاههای تحت پوشش وزارت علوم هستید به لینک
+                                <span onclick="window.open('https://portal.saorg.ir/educational-records/', '_blank') " style="cursor:pointer;text-decoration: underline;color: #039be5;">
+                                    https://portal.saorg.ir/educational-records/
+                                </span>
+                                و اگر فارغ التحصیل دانشگاه آزاد اسلامی هستید به این ادرس
+                                <span onclick="window.open('https://ticket.iau.ir/', '_blank') " style="cursor:pointer;text-decoration: underline;color: #039be5;">
+                                    https://ticket.iau.ir/
+                                </span>
+
+                                مراجعه و اشکال مدرک تحصیلی خود را اعلام بفرمایید تا اقدامات لازم انجام گردد .
+                            </span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box box-cme st3">
+                <h5>
+                    مشخصات فردی
+                </h5>
+
+
+
+                <div class="content" id="personalInfo">
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<script>
+
+            $(document).ready(function () {
+                $('.modal').modal();
+            });
+
+    var CaptchaCallback = function () {
+        grecaptcha.render('captchaS1', { 'sitekey': '6LdK6N0ZAAAAAIC5H6dPeXctNWs1DdMcb4CGzp1K' });
+        grecaptcha.render('captchaS2', { 'sitekey': '6LdK6N0ZAAAAAIC5H6dPeXctNWs1DdMcb4CGzp1K' });
+    };
+
+            // ==== counter
+    InquirySystem();
+    
+    function InquirySystem() {       
+                $.ajax({
+
+                    url: '/Home/InquirySystem',
+                    type: "GET",
+                    data: null
+                })
+                    .done(function (data) {
+
+                        let d = JSON.parse(data);
+
+                        if (d.data.Message == 'OK') {
+                            counterForInquery(d.data.inquaryCount, 60);
+                        }
+                    })
+                    .fail(function (error) {
+                        //    alert( "error" );
+                        console.log(error);
+
+                    })
+                    .always(function () {
+
+
+                    });
+
+
+    }    
+
+            function counterForInquery(finalCount, Lifecycle) {
+                var c = 0;
+
+                l = finalCount.toString();
+                length = l.length;
+
+                var timeInterval = setInterval(function () {
+                    if (c < finalCount) {
+                        c = c + 3 * (Math.pow(10, length - 5));
+                        c = c + 2 * (Math.pow(10, length - 4));
+                        c = c + 1 * (Math.pow(10, length - 3));
+                        c = c + 1 * (Math.pow(10, length - 2));
+
+                        c++;
+                        c = c + 10;
+                        c = c + 100;
+
+                        $("#counterId").text(c);
+                        c = c + 10;
+                        c++;
+                        $("#counterId").text(c);
+                        c++;
+                    } else {
+                        c = finalCount;
+                        // $("#counterId").css("color", "white");
+
+                        clearInterval(timeInterval);
+                    }
+                    $("#counterId").text(c);
+                }, Lifecycle);
+            }
+
+
+</script>
+
+
+        <div class="loader">
+            <div>
+                <div class="ml-loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+       
+     </div>
+
+
+    <footer style="background-color:#0f426b;padding:9px 6px;margin:10px 0 0 0;color:white;">
+        <div class="row" style="margin:0">
+            <div class="col s12">
+                <div class="row " style="margin-bottom:0">
+                    <div class="col-xs-12 col-md-5 col-lg-3" style="direction:rtl;padding:8px 0;margin:4px 0 0 0;">
+
+                        <p style="text-align:right;margin:0; font-size:10px;padding:0 0 0 4% ;">
+                            سامانه&nbsp; درخواست اصلاح اطلاعات سوابق تحصیلی در دانشگاه ازاد :
+                            <span onclick="window.open('https://ticket.iau.ir/', '_blank') " style="cursor:pointer;text-decoration: underline;">
+                                ticket.iau.ir
+                            </span>
+                        </p>
+
+                    </div>
+                    <div class="col-xs-12 col-md-7 col-lg-9" style="direction:rtl;padding:8px 0;margin:4px 0 0 0;font-size:10px">
+
+                        <p style="text-align:right;margin:0;padding:0 4% 0 0  ;">
+                            سامانه&nbsp; درخواست اصلاح اطلاعات سوابق تحصیلی دانشگاهای وزارت علوم  :
+                            <span onclick="window.open('https://portal.saorg.ir/educational-records/', '_blank') " style="cursor:pointer;text-decoration: underline;">
+                                https://portal.saorg.ir/educational-records/
+                            </span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom:0">
+
+                    <div class="col-xs-12 col-md-5 col-lg-3" style="direction:rtl;padding:8px 0;margin:4px 0 0 0;">
+                        <p style="text-align:right;margin:0; font-size:10px;padding:0 0 0 4% ;">
+                            سامانه&nbsp; درخواست اصلاح اطلاعات سوابق تحصیلی در حوزه های علمیه :
+                            <span onclick="window.open('http://reg.ismc.ir/rules/219', '_blank') " style="cursor:pointer;text-decoration: underline;">
+                                reg.ismc.ir
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <div class="col-xs-12 col-md-7 col-lg-9" style="direction:rtl;padding:8px 0;margin:4px 0 0 0;font-size:10px">
+
+                        <p style="text-align:right;margin:0;padding:0 4% 0 0  ;">
+                            سامانه&nbsp; درخواست اصلاح اطلاعات سوابق تحصیلی  وزارت بهداشت، درمان و آموزش پزشکی  :
+                            <span onclick="window.open('https://medicalportal.behdasht.gov.ir/medicalportal/IG.aspx', '_blank') " style="cursor:pointer;text-decoration: underline;">
+                                https://medicalportal.behdasht.gov.ir/medicalportal/IG.aspx
+                            </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="row" style="margin-bottom:0">
+
+                    <div class="col-xs-0 col-md-5 col-lg-3" style="direction:rtl;padding:0 0;margin:0 0 0 0;">
+
+
+                    </div>
+
+                    <div class="col-xs-12 col-md-7 col-lg-9" style="direction:rtl;padding:8px 0;margin:4px 0 0 0;font-size:10px">
+
+                        <p style="text-align:right;margin:0;padding:0 4% 0 0  ;">
+                            پست الکترونیک&nbsp; پشتیبان وزارت علوم، تحقیقات و فناوری :
+                            estelam@msrt.ir
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <!-- Select2 -->
+       
+        <script>
+            var isIE = false || !!document.documentMode;
+
+            if(isIE) {
+                alert("مرورگر شما اینترنت اکسپلورر می باشد . لطفا از دیگر مرورگرهای استفاده نمایید.");
+            }
+            
+                $(function () {
+                     //Initialize Select2 Elements
+                    $('.select2').select2()
+                 });
+                 
+        </script>
+    
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="چالش recaptcha تا دو دقیقه دیگر منقضی می&zwnj;شود" src="https://www.google.com/recaptcha/api2/bframe?hl=fa&amp;v=g9jXH0OtfQet-V0Aewq23c7K&amp;k=6LdK6N0ZAAAAAIC5H6dPeXctNWs1DdMcb4CGzp1K" name="c-1l37ccmzm000" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="چالش recaptcha تا دو دقیقه دیگر منقضی می&zwnj;شود" src="https://www.google.com/recaptcha/api2/bframe?hl=fa&amp;v=g9jXH0OtfQet-V0Aewq23c7K&amp;k=6LdK6N0ZAAAAAIC5H6dPeXctNWs1DdMcb4CGzp1K" name="c-tcf35m3hgbz2" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
